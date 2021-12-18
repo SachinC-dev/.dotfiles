@@ -11,5 +11,6 @@ set nowrap
 set guicursor=
 set scrolloff=8
 set termguicolors
+set encoding=UTF-8
 
 highlight Normal guibg=none

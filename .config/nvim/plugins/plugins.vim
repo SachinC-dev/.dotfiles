@@ -12,5 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'mattn/emmet-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'sickill/vim-monokai'
+Plug 'preservim/nerdcommenter'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
