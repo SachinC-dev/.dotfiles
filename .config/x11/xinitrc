@@ -1,0 +1,11 @@
+#!/bin/sh
+
+picom -f &
+nitrogen --restore &
+#exec awesome
+dwmblocks &
+#/usr/bin/emacs --daemon &
+sxhkd &
+exec dwm
+# for i3
+#exec i3

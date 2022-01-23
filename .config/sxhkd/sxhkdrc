@@ -1,0 +1,4 @@
+super + shift + s
+    maim ~/Pictures/Screenshots/$(date +%s).png
+super + r
+    st -e zsh -c "ranger"
