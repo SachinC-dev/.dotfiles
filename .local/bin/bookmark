@@ -1,0 +1,11 @@
+# !/bin/sh
+BROWSER="brave"
+declare -a options=(
+"1 - https://youtube.com"
+"2 - https://reddit.com"
+"3 - https://keybr.com"
+)
+choice=$(printf '%s\n' "${options[@]}" | dmenu -i -l 20 -p "Choose the site: ")
+site=$(printf '%s\n' "$choice" | cut -b 5-)
+[[ -z $choice ]] && exit 1 || $BROWSER "$site"
+

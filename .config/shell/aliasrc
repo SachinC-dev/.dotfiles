@@ -1,0 +1,11 @@
+#!/bin/sh
+alias v='nvim'
+alias ls='ls -a --color'
+alias gst='git status'
+alias gcm='git commit -m'
+alias gi='git init'
+alias pm='pacman'
+alias pms='sudo pacman -S'
+alias pmy='sudo pacman -Syy'
+alias pmu='sudo pacman -Syu'
+alias mci='sudo make clean install'
