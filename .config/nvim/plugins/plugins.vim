@@ -11,7 +11,11 @@ Plug 'joshdick/onedark.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'preservim/nerdcommenter'
 Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'vim-airline/vim-airline'
 "LSP
 Plug 'neovim/nvim-lspconfig'
+"Plug 'kabouzeid/nvim-lspinstall'
 Plug 'hrsh7th/nvim-compe'
+"Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 call plug#end()
