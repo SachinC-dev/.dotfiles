@@ -61,9 +61,11 @@ lfcd () {
 }
 bindkey -s '^o' 'lfcd\n'
 
-bindkey -s '^r' 'ranger\n'
+bindkey -s '^r' 'lf\n'
 
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
+
+bindkey -s '^p' 'cd "$(daProject)"\n'
 
 bindkey '^[[P' delete-char
 
@@ -74,5 +76,5 @@ bindkey '^e' edit-command-line
 # Syntax highlighting
 source /home/sachin/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 # Autosuggestions
-#source /home/sachin/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
-
+source /home/sachin/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+eval "$(starship init zsh)"
