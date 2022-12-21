@@ -1,0 +1,10 @@
+#!/bin/sh
+
+options="Poweroff\nReboot"
+selected=$(echo $options | dmenu -i -l 20 -p "Choose the operation: ")
+if [ $selected = "Poweroff" ]; then
+    poweroff
+elif [ $selected = "Reboot" ]; then
+    reboot
+fi
+

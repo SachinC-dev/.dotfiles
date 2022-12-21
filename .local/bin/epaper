@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [[ -z $1 ]]; then
+    date=$(date '+%Y/%m/%d');
+else
+    date=$1;
+fi
+
+newsdir="$HOME/Documents/news"
+datedir=$(sed 's/\//-/g' <<<$date)
+
+mkdir -p $newsdir/$datedir
+
+for i in 0{1..9} {10..50}; do
+    wget -nc -O $newsdir/$datedir/$i.jpg https://epaperwmimg.amarujala.com/$date/vc/$i/hdimage.jpg || break
+done
+
+notify-send "Paper ready"
+sxiv -z 110 $newsdir/$datedir/*

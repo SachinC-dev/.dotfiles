@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+declare -a projects=(
+"sapis - $HOME/desk/code/sapis"
+"scripts - $HOME/.local/bin"
+"dwm - $HOME/.config/suckless/dwm"
+"st-gruvbox - $HOME/.config/suckless/st-gruvbox"
+"st-onedark - $HOME/.config/suckless/st"
+"dwmblocks - $HOME/.config/suckless/dwmblocks"
+"dmenu - $HOME/.config/suckless/st-gruvbox"
+"nvim - $HOME/.config/nvim"
+)
+
+choice=$(printf '%s\n' "${projects[@]}" | fzf --reverse --prompt "Choose the project: ")
+cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
+echo $cfg

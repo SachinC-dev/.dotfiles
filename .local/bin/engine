@@ -1,0 +1,11 @@
+#!/bin/sh
+
+MyBro="brave"
+
+declare -a options=(
+"archaur - https://aur.archlinux.org/packages/?O=0&K="
+"archpkg - https://archlinux.org/packages/?sort=&q="
+"archwiki - https://wiki.archlinux.org/index.php?search="
+"duckduckgo - https://duckduckgo.com/?q="
+"google - https://google.com/search?q="
+)

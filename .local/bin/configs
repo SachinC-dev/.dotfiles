@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#MYEDITOR="emacsclient -c"
+MYEDITOR="nvim"
+choice=$(cat ~/.local/share/scripts/configs.txt | dmenu -i -g 2 -l 8 -p "Edit config: ")
+cfg="${choice##* }"
+[ -z $choice ] && exit 1 || st -e $MYEDITOR $cfg
